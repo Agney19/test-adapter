@@ -10,5 +10,9 @@ camel:
   springboot:
     main-run-controller: true
 
-incoming.from.uri: rabbitmq:in-exchange?exchangeType=headers&autoDelete=false&queue=in-queue
-outgoing.to.uri: rabbitmq:out-exchange?autoDelete=false&queue=out-queue
+queue:
+  in: in-queue
+  out: out-queue
+
+incoming.from.uri: rabbitmq:?queue=${queue.in}&declare=false
+outgoing.to.uri: rabbitmq:?declare=false
