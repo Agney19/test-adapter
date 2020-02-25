@@ -21,7 +21,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
-            <artifactId>camel-rabbitmq</artifactId>
+            <artifactId>camel-rabbitmq-starter</artifactId>
             <version>${camel.version}</version>
         </dependency>
         <dependency>

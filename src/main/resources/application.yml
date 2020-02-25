@@ -1,5 +1,9 @@
 spring.application.name: test-adapter
 
+camel.component.rabbitmq.username: admin
+camel.component.rabbitmq.password: admin
+camel.component.rabbitmq.hostname: 192.168.1.50
+
 #logging:
 #  file: /home/agney/IdeaProjects/logs/${spring.application.name}.log
 #  pattern:
