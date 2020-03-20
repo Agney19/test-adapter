@@ -1,14 +1,14 @@
 spring.application.name: test-adapter
 
-camel.component.rabbitmq.username: admin
-camel.component.rabbitmq.password: admin
-camel.component.rabbitmq.hostname: 192.168.1.50
+#camel.component.rabbitmq.username: admin
+#camel.component.rabbitmq.password: admin
+#camel.component.rabbitmq.hostname: 192.168.1.50
 
-#logging:
-#  file: /home/agney/IdeaProjects/logs/${spring.application.name}.log
-#  pattern:
-#    console: "%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} | %level | ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
-#    file: "%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} | %level | ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
+logging:
+  file: /home/agney/IdeaProjects/logs/${spring.application.name}.log
+  pattern:
+    console: "%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} | %level | ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
+    file: "%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}} | %level | ${PID:- } --- [%t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
 
 camel:
   springboot:
